@@ -379,24 +379,3 @@ sam_build_with_container_env_var_file() {
 sam_build_parallel() {
     sam build --parallel
 }
-
-# Autocompletion
-_sam_cli_completion() {
-   local completions
-   completions=$(sam --completion "${words[@]}")
-   reply=("${(ps:\n:)completions}")
-}
-compctl -K _sam_cli_completion sam
-
-# Initialize plugin
-if (( $+commands[sam] )); then
-   # If the completion file does not exist, generate it and then source it
-   # Otherwise, source it and regenerate in the background
-   if [[ ! -f "$ZSH_CACHE_DIR/completions/_sam" ]]; then
-       sam --completion=zsh > "$ZSH_CACHE_DIR/completions/_sam"
-       source "$ZSH_CACHE_DIR/completions/_sam"
-   else
-       source "$ZSH_CACHE_DIR/completions/_sam"
-       (sam --completion=zsh > "$ZSH_CACHE_DIR/completions/_sam") &!
-   fi
-fi

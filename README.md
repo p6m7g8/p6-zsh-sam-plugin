@@ -16,7 +16,7 @@
 ### Badges
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/p6m7g8/p6df-python/&style=flat)](https://mergify.io)
+[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/p6m7g8/p6-zsh-sam-plugin/&style=flat)](https://mergify.io)
 
 ## Summary
 
