@@ -1,16 +1,20 @@
-# p6-zsh-sam-plugin
+# P6's POSIX.2 p6-zsh-sam-plugin
 
 ## Table of Contents
 
 ### p6-zsh-sam-plugin
 
-- [p6-zsh-sam-plugin](#p6-zsh-sam-plugin)
-  - [Badges](#badges)
+- [P6's POSIX.2 p6-zsh-sam-plugin](#p6s-posix2-p6-zsh-sam-plugin)
+  - [Table of Contents](#table-of-contents)
+    - [p6-zsh-sam-plugin](#p6-zsh-sam-plugin)
+    - [Badges](#badges)
   - [Summary](#summary)
   - [Contributing](#contributing)
   - [Code of Conduct](#code-of-conduct)
   - [Changes](#changes)
-    - [Usage](#usage)
+  - [Usage](#usage)
+    - [Aliases](#aliases)
+    - [Convenience Functions](#convenience-functions)
   - [Author](#author)
 
 ### Badges
@@ -44,7 +48,7 @@
 - alias sp="sam package"
 - alias sdg="sam deploy --guided"
 
-### Convience Functions
+### Convenience Functions
 
 - sam_build_parallel()
 - sam_build_with_config_env(config_env)
