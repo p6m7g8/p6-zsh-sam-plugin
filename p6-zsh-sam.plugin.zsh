@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # Plugin: sam-cli
 
 # Aliases
